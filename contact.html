@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Fire Kirin XYZ - Fast & Secure Download" />
     <meta name="twitter:description"
         content="Download Fire Kirin XYZ - The ultimate gaming experience with fast performance and secure gameplay." />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
     <link rel="stylesheet" href="./css/tailwind.css">
     <meta name="google-site-verification" content="NN5AbBYG9gwKZ1adUkhORtJx5AM_12v9H7t5XHfHAy4" />
@@ -57,28 +57,37 @@
             },
         };
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWHFVTMR9X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EWHFVTMR9X');
+    </script>
 </head>
 
 <body>
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <!-- NAV -->
-<nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-            
-            <!-- Logo -->
-            <a class="flex items-center" href="/">
-                <img alt="Fire Kirin XYZ" class="h-16 w-auto" 
-                     src="./images/Fire-Kirin-PNG-Logo-transparent.webp">
-            </a>
+        <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
 
-            <!-- Desktop Links -->
-            <div class="hidden md:flex items-center space-x-8">
-                <a class="text-sm font-medium text-gray-900 hover:text-orange-600" href="/">Home</a>
-                <a class="text-sm font-medium text-gray-900 hover:text-orange-600" href="/about">About</a>
-                <a class="text-sm font-medium text-gray-900 hover:text-orange-600" href="/download">Download</a>
-                <a class="text-sm font-medium text-orange-600" href="/contact">Contact</a>
-                <a href="tel:8446607600"
+                    <!-- Logo -->
+                    <a class="flex items-center" href="/">
+                        <img alt="Fire Kirin XYZ" class="h-16 w-auto"
+                            src="./images/Fire-Kirin-PNG-Logo-transparent.webp">
+                    </a>
+
+                    <!-- Desktop Links -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a class="text-sm font-medium text-gray-900 hover:text-orange-600" href="/">Home</a>
+                        <a class="text-sm font-medium text-gray-900 hover:text-orange-600" href="/about">About</a>
+                        <a class="text-sm font-medium text-gray-900 hover:text-orange-600" href="/download">Download</a>
+                        <a class="text-sm font-medium text-orange-600" href="/contact">Contact</a>
+                        <a href="tel:8446607600"
                             class="text-sm font-medium text-gray-900 hover:text-orange-600 flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4 mr-1">
@@ -87,31 +96,30 @@
                                 </path>
                             </svg> (844) 660-7600
                         </a>
+                    </div>
+
+                    <!-- Desktop Button -->
+                    <a class="hidden md:block px-6 py-2.5 bg-gradient-to-r from-orange-500 to-red-600 text-white 
+                       text-sm font-medium rounded-full hover:from-orange-600 hover:to-red-700" href="/download">
+                        Get Started
+                    </a>
+
+                    <!-- Mobile Toggle Button -->
+                    <button id="menuBtn"
+                        class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg text-gray-800 hover:bg-white/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 5.25h16.5M3.75 9.75h16.5M3.75 14.25h16.5M3.75 18.75h16.5" />
+                        </svg>
+                    </button>
+
+                </div>
             </div>
+        </nav>
 
-            <!-- Desktop Button -->
-            <a class="hidden md:block px-6 py-2.5 bg-gradient-to-r from-orange-500 to-red-600 text-white 
-                       text-sm font-medium rounded-full hover:from-orange-600 hover:to-red-700"
-               href="/download">
-               Get Started
-            </a>
-
-            <!-- Mobile Toggle Button -->
-            <button id="menuBtn"
-                class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg text-gray-800 hover:bg-white/10">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 5.25h16.5M3.75 9.75h16.5M3.75 14.25h16.5M3.75 18.75h16.5" />
-                </svg>
-            </button>
-
-        </div>
-    </div>
-</nav>
-
-<!-- MOBILE MENU -->
-<div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200 shadow-lg">
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200 shadow-lg">
             <div class="px-4 py-6 space-y-4 mt-20">
                 <a href="/" class="block text-base font-medium text-gray-900">Home</a>
                 <a href="/download" class="block text-base font-medium text-gray-900">Download</a>
@@ -129,18 +137,18 @@
             </div>
         </div>
 
-<!-- JS Toggle -->
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
+        <!-- JS Toggle -->
+        <script>
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
 
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
     </header>
     <div class="min-h-screen bg-white">
-      
+
         <section class="pt-32 pb-20 bg-gradient-to-br from-orange-50 to-red-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
@@ -160,7 +168,8 @@
                             <div class="flex items-start gap-4">
                                 <div
                                     class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-orange-500 to-red-600 rounded-lg">
-                                    <i class="ri-phone-line text-xl text-white"></i></div>
+                                    <i class="ri-phone-line text-xl text-white"></i>
+                                </div>
                                 <div>
                                     <h3 class="text-lg font-semibold text-gray-900 mb-1">Phone</h3><a
                                         href="tel:8446607600"
@@ -172,7 +181,8 @@
                             <div class="flex items-start gap-4">
                                 <div
                                     class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-orange-500 to-red-600 rounded-lg">
-                                    <i class="ri-mail-line text-xl text-white"></i></div>
+                                    <i class="ri-mail-line text-xl text-white"></i>
+                                </div>
                                 <div>
                                     <h3 class="text-lg font-semibold text-gray-900 mb-1">Email</h3><a
                                         href="mailto:info@firekirinxyz.app"
@@ -183,7 +193,8 @@
                             <div class="flex items-start gap-4">
                                 <div
                                     class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-orange-500 to-red-600 rounded-lg">
-                                    <i class="ri-time-line text-xl text-white"></i></div>
+                                    <i class="ri-time-line text-xl text-white"></i>
+                                </div>
                                 <div>
                                     <h3 class="text-lg font-semibold text-gray-900 mb-1">Support Hours</h3>
                                     <p class="text-base text-gray-600">24/7 Customer Support</p>
