@@ -1,0 +1,34 @@
+# Allow all crawlers, search engines, and AI/LLM bots
+User-agent: *
+Allow: /
+
+# Allow Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Allow Google Extended (AI training)
+User-agent: Google-Extended
+Allow: /
+
+# Allow OpenAI GPTBot
+User-agent: GPTBot
+Allow: /
+
+# Allow Anthropic Claude bot
+User-agent: ClaudeBot
+Allow: /
+
+# Allow Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Allow BingAI / MS AI bots
+User-agent: Bingbot
+Allow: /
+
+# Allow Apple GPT (Applebot-Extended)
+User-agent: Applebot
+Allow: /
+
+# Sitemap
+Sitemap: https://firekirinxyz.app/sitemap.xml
