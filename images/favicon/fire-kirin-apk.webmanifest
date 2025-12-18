@@ -1,0 +1,23 @@
+{
+  "name": "Fire Kirin APK",
+  "short_name": "Fire Kirin",
+  "icons": [
+    {
+      "src": "/images/favicon/fire-kirin-apk-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/favicon/fire-kirin-apk-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
+
+

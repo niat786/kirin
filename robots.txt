@@ -31,4 +31,4 @@ User-agent: Applebot
 Allow: /
 
 # Sitemap
-Sitemap: https://firekirinxyz.app/sitemap.xml
+Sitemap: https://firekirinapk.online/sitemap.xml
